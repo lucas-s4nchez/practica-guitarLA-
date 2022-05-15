@@ -11,6 +11,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/app.css">
+  <script defer src="js/imagenes.js"></script>
+
 </head>
 
 <body>
@@ -39,7 +41,12 @@
     <div class="blog__grid blog__grid--3cols ">
 
       <article class="entrada">
-        <img src="img/blog_1.jpg" alt="imagen blog" class="entrada__imagen">
+
+        <picture class="entrada__imagen">
+          <source srcset="img/blog_1.avif" type="image/avif">
+          <source srcset="img/blog_1.webp" type="image/webp">
+          <img loading="lazy" src="img/blog_1.jpg" alt="imagen de blog">
+        </picture>
         <div class="entrada__contenido">
           <h3 class="entrada__titulo">¿Como elegir tu primer guitarra?</h3>
           <p class="entrada__fecha">20 de Enero de 2022</p>
@@ -51,7 +58,11 @@
       </article>
 
       <article class="entrada">
-        <img src="img/blog_2.jpg" alt="imagen blog" class="entrada__imagen">
+        <picture class="entrada__imagen">
+          <source srcset="img/blog_2.avif" type="image/avif">
+          <source srcset="img/blog_2.webp" type="image/webp">
+          <img loading="lazy" src="img/blog_2.jpg" alt="imagen de blog">
+        </picture>
         <div class="entrada__contenido">
           <h3 class="entrada__titulo">¿Como elegir tu primer guitarra?</h3>
           <p class="entrada__fecha">20 de Enero de 2022</p>
@@ -63,7 +74,11 @@
       </article>
 
       <article class="entrada">
-        <img src="img/blog_3.jpg" alt="imagen blog" class="entrada__imagen">
+        <picture class="entrada__imagen">
+          <source srcset="img/blog_3.avif" type="image/avif">
+          <source srcset="img/blog_3.webp" type="image/webp">
+          <img loading="lazy" src="img/blog_3.jpg" alt="imagen de blog">
+        </picture>
         <div class="entrada__contenido">
           <h3 class="entrada__titulo">¿Como elegir tu primer guitarra?</h3>
           <p class="entrada__fecha">20 de Enero de 2022</p>
@@ -75,7 +90,11 @@
       </article>
 
       <article class="entrada">
-        <img src="img/blog_4.jpg" alt="imagen blog" class="entrada__imagen">
+        <picture class="entrada__imagen">
+          <source srcset="img/blog_4.avif" type="image/avif">
+          <source srcset="img/blog_4.webp" type="image/webp">
+          <img loading="lazy" src="img/blog_4.jpg" alt="imagen de blog">
+        </picture>
         <div class="entrada__contenido">
           <h3 class="entrada__titulo">¿Como elegir tu primer guitarra?</h3>
           <p class="entrada__fecha">20 de Enero de 2022</p>

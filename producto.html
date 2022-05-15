@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/app.css">
+  <script defer src="js/imagenes.js"></script>
 </head>
 
 <body>
@@ -35,7 +36,11 @@
 
   <main class="__contenedor">
     <div class="producto producto--flex">
-      <img src="/img/guitarra_04.jpg" alt="imagen guitarra" class="producto__imagen">
+      <picture>
+        <source srcset="/img/guitarra_04.avif" type="image/avif">
+        <source srcset="/img/guitarra_04.webp" type="image/webp">
+        <img loading="lazy" src="/img/guitarra_04.jpg" alt="">
+      </picture>
       <div class="producto__contenido">
         <h3 class="producto__nombre">vai</h3>
         <p class="producto__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique vel

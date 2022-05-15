@@ -45,17 +45,35 @@ a {
 /*header*/
 
 .header {
+  background-size: cover;
+  background-position: 50%;
+  padding: 5rem 0;
+  /*para posiscionar la guitarra en relacion al header*/
+  position: relative;
+}
+.notavif.notwebp .header {
   background-image: linear-gradient(
       to right,
       rgb(0 0 0 / 0.7),
       rgb(0 0 0 / 0.7)
     ),
     url(../img/header.jpg);
-  background-size: cover;
-  background-position: 50%;
-  padding: 5rem 0;
-  /*para posiscionar la guitarra en relacion al header*/
-  position: relative;
+}
+.webp .header {
+  background-image: linear-gradient(
+      to right,
+      rgb(0 0 0 / 0.7),
+      rgb(0 0 0 / 0.7)
+    ),
+    url(../img/header.webp);
+}
+.avif .header {
+  background-image: linear-gradient(
+      to right,
+      rgb(0 0 0 / 0.7),
+      rgb(0 0 0 / 0.7)
+    ),
+    url(../img/header.avif);
 }
 .header__barra {
   display: flex;
@@ -218,15 +236,33 @@ a {
 .cursos {
   margin-top: 10rem;
   padding: 10rem 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.notavif.notwebp .cursos {
   background-image: linear-gradient(
       to right,
       rgb(0 0 0 / 0.7),
       rgb(0 0 0 / 0.7)
     ),
     url(/img/cursos_bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+}
+.webp .cursos {
+  background-image: linear-gradient(
+      to right,
+      rgb(0 0 0 / 0.7),
+      rgb(0 0 0 / 0.7)
+    ),
+    url(/img/cursos_bg.webp);
+}
+.avif .cursos {
+  background-image: linear-gradient(
+      to right,
+      rgb(0 0 0 / 0.7),
+      rgb(0 0 0 / 0.7)
+    ),
+    url(/img/cursos_bg.avif);
 }
 
 @media (min-width: 768px) {

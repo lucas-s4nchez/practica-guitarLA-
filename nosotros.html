@@ -11,6 +11,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/app.css">
+  <script defer src="js/imagenes.js"></script>
 </head>
 
 <body>
@@ -37,7 +38,12 @@
     <h2 class="nosotros__heading">Nosotros</h2>
     <div class="nosotros__grid">
       <div class="nosotros__box-img">
-        <img src="img/nosotros.jpg" alt="imagen nosotros" class="nosotros__imagen">
+
+        <picture class="nosotros__imagen">
+          <source srcset="img/nosotros.avif" type="image/avif">
+          <source srcset="img/nosotros.webp" type="image/webp">
+          <img loading="lazy" src="img/nosotros.jpg" alt="imagen nosotros">
+        </picture>
       </div>
       <div class="nosotros__contenido">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia quidem nesciunt dicta officia fugiat
